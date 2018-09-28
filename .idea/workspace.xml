@@ -68,18 +68,18 @@
       <file leaf-file-name="requirement.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirement.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state relative-caret-position="443">
+              <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="smart_update.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="smart_update.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/smart_update.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="-420">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -125,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xiaoyao/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,10 +164,10 @@
         <option value="$PROJECT_DIR$/xiaoyao/wsgi.py" />
         <option value="$PROJECT_DIR$/xiaoyao/__init__.py" />
         <option value="$PROJECT_DIR$/metaphysics/urls.py" />
-        <option value="$PROJECT_DIR$/xiaoyao/settings.py" />
         <option value="$PROJECT_DIR$/metaphysics/views.py" />
         <option value="$PROJECT_DIR$/templates/login_page.html" />
         <option value="$PROJECT_DIR$/smart_update.py" />
+        <option value="$PROJECT_DIR$/xiaoyao/settings.py" />
       </list>
     </option>
   </component>
@@ -553,6 +553,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f2383adc-d11f-419c-affc-11d151bf8677" name="Default" comment="" />
@@ -659,14 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiaoyao/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xiaoyao/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -715,18 +710,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirement.txt">
+    <entry file="file://$PROJECT_DIR$/smart_update.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="-420">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smart_update.py">
+    <entry file="file://$PROJECT_DIR$/requirement.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="443">
+          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaoyao/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
