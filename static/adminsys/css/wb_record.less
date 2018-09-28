@@ -1,0 +1,47 @@
+@base: #3bb878;
+
+.btn-default(@color) {
+  background-color: @color;
+  border: 1px solid @color;
+}
+
+.table-td-default {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+.search_panel {
+
+  margin-bottom: 20px;
+
+  .wb_record_title {
+    float: left;
+    margin-left: 5px;
+    font-size: 1.5em;
+  }
+
+  .record_time_filter {
+    float: right;
+  }
+
+  .pull-right {
+    background: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  #start_date, #end_date {
+    width: 35%;
+  }
+}
+
+
+.wb_record th {
+  .table-td-default;
+}
+
+.form-control {
+  width: auto;
+}

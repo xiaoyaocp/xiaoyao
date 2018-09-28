@@ -1,0 +1,19 @@
+<nav>
+<ul class="pagination">
+    {% if results_list.has_previous %}
+        <li><a href="javascript:void(0)" onclick="jump_page_post({{results_list.previous_page_number}})">&laquo</a></li>
+    {% endif %}
+
+    {% for page_num in page_range %}
+        {% if page_num == results_list.number %}
+        <li class="active"><a href="#">{{ results_list.number }}</a></li>
+        {% else %}
+        <li><a href="javascript:void(0)" onclick="jump_page_post({{page_num}})">{{ page_num }}</a></li>
+        {% endif %}
+    {% endfor %}
+
+    {% if results_list.has_next %}
+        <li><a href="javascript:void(0)" onclick="jump_page_post({{results_list.next_page_number}})">&raquo;</a></li>
+    {% endif %}
+</ul>
+</nav>

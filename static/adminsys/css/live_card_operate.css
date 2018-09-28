@@ -1,0 +1,19 @@
+#dowload-card span{ color: #7b0656; }
+#dowload-card{ margin-left: 20px; }
+
+#trumpet-title{ overflow: hidden;}
+#trumpet-title li{ float: left; width: 120px; height: 80px; line-height: 80px; text-align: center;}
+#trumpet-title li:nth-of-type(1),
+#trumpet-title li:nth-of-type(2){ width: 180px; }
+/*#trumpet-title li:nth-of-type(2),#trumpet-title li:nth-of-type(3){ width: 200px; }*/
+
+.card-list{ overflow: hidden;}
+.card-list li{ float: left; width: 120px; height: 80px; line-height: 80px; text-align: center; overflow: hidden;}
+.card-list li:nth-of-type(1),
+.card-list li:nth-of-type(2){ width: 180px;}
+/*.card-list li:nth-of-type(1){ width: 120px;}*/
+/*.card-list li:nth-of-type(3),.card-list li:nth-of-type(3){ width: 200px; }*/
+
+.myglyphicon{ position: relative; right: 20px; }
+
+.text-width{ display: inline-block; width: 120px; }

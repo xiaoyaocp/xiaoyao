@@ -1,0 +1,57 @@
+#subject,#grade{ margin-left: 40px; }
+.form-horizontal{ border-bottom: none; }
+
+#course_id{ display: inline-block; margin-left: 45px; }
+#course_name{ margin-left: 15px; }
+
+#course_list, #pic_course_detail,#pic_course_info{ display: inline-block; width: 190px;}
+#version_list,#district_list,#list_tabs{ float: right; width: 800px; margin-left: 20px;}
+#version_list label,#district_list label{ width: 95px; margin: 5px 0 0 0; font-weight: normal;}
+
+#show_tabs{ width: 581px; margin: -75px 0 0 120px; overflow: hidden; }
+#show_tabs ul{ overflow: hidden;}
+#show_tabs ul li{ display: none; float: left; width: 126px; height: 38px; overflow: hidden; margin: 15px 15px 0 0; border: 1px solid #d3d8e0; 
+	color: #d3d8e0; line-height: 38px; text-align: center; cursor: pointer; }
+#show_tabs ul li:hover{ border-color: #4fbe00; color: #4fbe00;}
+#show_tabs ul .tab_active{ border-color: #4fbe00; color: #4fbe00; }
+
+#list_tabs{ width: 581px; margin: 15px 0 0 120px; overflow: hidden; padding: 0 0 15px 15px; border: 1px solid #d3d8e0; }
+#list_tabs ul{ overflow: hidden; }
+#list_tabs ul li{ float: left; width: 126px; height: 38px; overflow: hidden; margin: 15px 15px 0 0; border: 1px solid #d3d8e0; 
+	color: #d3d8e0; line-height: 38px; text-align: center; cursor: pointer; }
+#list_tabs ul li:hover{ border-color: #4fbe00; color: #4fbe00;}
+#list_tabs ul .tab_active{ border-color: #4fbe00; color: #4fbe00; }
+
+#course_brief{  margin-left: 15px; width: 590px;}
+#limit_num{ margin-top: 10px; color:  #d3d8e0;}
+
+.textarea_div p{ margin: 5px 0 0 630px; }
+.tips{ display: inline-block; margin-right: 75px; }
+
+#course_content{ width: 100%; height: 50px; overflow: hidden;}
+#course_content li{ float: left; width: 150px; line-height: 50px; text-align: center;}
+#course_content li:nth-of-type(2){ width: 190px; }
+#course_content_list ul{ overflow: hidden; }
+#course_content_list li{ text-align: center; line-height: 50px;}
+#course_content_list li:nth-of-type(3),#course_content_list li:nth-of-type(5),
+	#course_content_list li:nth-of-type(6){ width: 200px; }
+
+#course_content_list{/*border: 1px solid #000;*/ overflow: hidden; background-color: #d3d8e0;}
+#course_content_list ul li{ float: left; width: 150px;}
+#course_content_list #courseware_btn{ display: inline-block; position: relative; top: 10px; left: -20px; cursor: pointer;
+	width: 65px; height: 23px; line-height: 23px; border: 1px solid #d3d8e0; border-radius: 3px; background-color: #fff;}
+
+.save_btn{ margin: 50px 50px 0 0; }	
+
+#course_display .course_tip{ display: inline-block; margin-left: 20px; font-size: 12px; }
+#course_display div:nth-of-type(1){ margin-top: 20px; }
+#course_display .course_money{ margin-left: 55px; }
+#course_display .course_limit{ margin-left: 27px; }
+
+#course_time_tip{ font-weight: bold; }
+#course_time ul{ width: 100%; height: 50px; padding-top: 15px; overflow: hidden;}
+#course_time ul li{ float: left; width: 150px; height: 30px; line-height: 30px; text-align: center;}
+
+#pass_reject{ width: 400px; margin: 180px auto 0;}
+#pass_reject button:nth-of-type(1){ width: 150px; }
+#pass_reject button:nth-of-type(2){ width: 150px; }

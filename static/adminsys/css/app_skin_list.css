@@ -1,0 +1,9 @@
+#trumpet-title li{ float: left; width: 150px; text-align: center; }
+#trumpet-title li:nth-of-type(2),#trumpet-title li:nth-of-type(3){ width: 80px; }
+#trumpet-title li:nth-of-type(4){ width: 260px; }
+
+#skin-list li{ float: left; width: 150px; height: 80px; line-height: 80px; text-align: center; }
+#skin-list li:nth-of-type(2),#skin-list li:nth-of-type(3){ width: 80px; }
+#skin-list li:nth-of-type(4){ width: 260px; }
+
+#skin-list li a{ text-decoration: none; }

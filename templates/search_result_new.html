@@ -1,0 +1,252 @@
+{% load question_search_result %}
+<!DOCTYPE html>
+<html style="height:auto;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+      <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({    tex2jax: {inlineMath: [["$","$"]]}  });
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+    {% if question.spider_source = 2 %}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript">
+    {{jquery_js}}
+    </script>
+    <script type="text/javascript">
+    {{math_js}}
+    </script>
+<!-- question_answer.replace('mathl', 'MathLs')  todo-->
+<style media="screen">
+  {{mathquill_css}}
+</style>
+{% endif %}
+
+<!-- css library -->
+{% if question.spider_source = 3 %}
+<style media="screen" id="source_3">
+{{jye_css}}
+</style>
+{% endif %}
+
+{% if question.spider_source = 2 or question.spider_source = 3 or question.spider_source = 8 or question.spider_source = 9 %}
+<!-- 也要 iafanti in ua  -->
+{% if "iafanti" in ua %}
+<style media="screen">
+html{width:98%;height:100%} body{width:98%;height:100%;font-size:12px;font-family:"Arial","Microsoft YaHei","Microsoft JhengHei","Wingdings 3",sans-serif;line-height:175%;color:#000 !important}
+</style>
+{% endif %}
+{% endif %}
+
+{% if question.spider_source = 23 %}
+<style media="screen" id="xueba">
+    {{xueba_css}}
+</style>
+{% endif %}
+
+{%if question.spider_source = 20%}
+<style media="screen">
+.AFanMath,.AFanMath table{margin:0;font-style:normal;font-weight:400;float:none;display:inline-block}.AFanMath{border:0;direction:ltr;font-family:&#39;font-size:15px;letter-spacing:1px;line-height:normal;padding:0;text-align:left;text-indent:0;text-transform:none;white-space:nowrap;word-spacing:normal;word-wrap:normal;-webkit-text-size-adjust:none}.AFanMath table,.AFanMath table td{padding:0;font-size:inherit;line-height:normal;border:0}.AFanMath div,.AFanMath span{border:0;margin:0;padding:0;line-height:normal;text-align:left;height:auto;white-space:normal}.AFanMath table{border-collapse:collapse;text-align:center;vertical-align:middle;zoom:0}.AFanMath table td{white-space:nowrap;width:auto}.AFanMath_mi{font-style:italic}
+</style>
+{%endif%}
+
+<style media="screen">
+  {{body_css}}
+</style>
+
+<script>
+function xianshijiexi(id, id1) {
+    document.getElementById(id).style.display = 'block';
+    document.getElementById(id1).style.display = 'none';
+}
+
+function shouhui(id, id1) {
+    document.getElementById(id).style.display = 'none';
+    document.getElementById(id1).style.display = 'block';
+}
+function shrinkYuanti(id){
+  document.getElementById(id).style.height="4.5rem";
+  document.getElementById(id).style.overflow="hidden";
+  document.getElementById(id).style.paddingBottom="0px";
+}
+function extendYuanti(id){
+  document.getElementById(id).style.height="auto";
+  document.getElementById(id).style.overflow="visible";
+  document.getElementById(id).style.paddingBottom="8px";
+}
+</script>
+  </head>
+  <body >
+
+<!--题目加选项  -->
+{% if question.question_html != "" %}
+{% autoescape off %}
+<div class="Green_line"><ul class="Green_block">题目</ul></div>
+
+{% if question.spider_source = 2 %}
+<div class="content">{{question.question_html|replace_br_decode|image_prefix_replace:question.spider_source|replace_math}}</div>
+{% else %}
+<div class="content">{{question.question_html|replace_br_decode|image_prefix_replace:question.spider_source}}</div>
+{% endif %}
+
+{% endautoescape %}
+{% endif %}
+
+{% if question.option_html != "" %}
+{% autoescape off %}
+{% if question.spider_source = 2 %}
+<div class="content">{{question.option_html|replace_br_decode|image_prefix_replace:question.spider_source|replace_math}}</div>
+{% else %}
+<div class="content">{{question.option_html|replace_br_decode|image_prefix_replace:question.spider_source}}</div>
+{% endif %}
+{% endautoescape %}
+{% endif %}
+
+<!--答案  -->
+{% if question.answer_all_html != "" %}
+{% autoescape off %}
+<div class="Green_line"><ul class="Green_block">答案</ul></div>
+
+{% if question.spider_source = 2 %}
+<div class="content">{{question.answer_all_html|replace_br_decode|image_prefix_replace:question.spider_source|replace_math}}</div>
+{% else %}
+<div class="content">{{question.answer_all_html|replace_br_decode|image_prefix_replace:question.spider_source}}</div>
+{% endif %}
+
+{% endautoescape %}
+{% endif %}
+
+<!--解答  -->
+{% if question.jieda != "" %}
+{% autoescape off %}
+<div class="Green_line"><ul class="Green_block">解答</ul></div>
+{% if question.spider_source = 2 %}
+<div class="content">{{question.jieda|html_decode|image_prefix_replace:question.spider_source|replace_math}}</div>
+{% else %}
+<div class="content">{{question.jieda|html_decode|image_prefix_replace:question.spider_source}}</div>
+{% endif %}
+{% endautoescape %}
+{% endif %}
+
+
+<!-- 解析 -->
+{% if question.fenxi != "" %}
+{% autoescape off %}
+<div class="Green_line"><ul class="Green_block">解析</ul></div>
+{% if question.spider_source = 2 %}
+<div class="content">{{question.fenxi|replace_br_decode|image_prefix_replace:question.spider_source|replace_math}}</div>
+{% else %}
+<div class="content">{{question.fenxi|replace_br_decode|image_prefix_replace:question.spider_source}}</div>
+{% endif %}
+{% endautoescape %}
+{% endif %}
+
+<!-- 知识点 -->
+{% if question.knowledge_point != "" %}
+{% autoescape off %}
+<div class="Green_line"><ul class="Green_block">知识点</ul></div>
+{% if question.spider_source = 2 %}
+<div class="content">{{ question.knowledge_point|html_decode|image_prefix_replace:question.spider_source|replace_math }}</div>
+{% else %}
+<div class="content">{{ question.knowledge_point|html_decode|image_prefix_replace:question.spider_source }}</div>
+{% endif %}
+{% endautoescape %}
+{% endif %}
+
+<!--17,18,19,20,21,23,25 和 非2,3,8,9,10,11,12,13,14,15,16 要把h1去掉  -->
+{% for single_question in similar_question %}
+{% if forloop.first %}
+<div id="juyifansanDiv">
+<p class="juyifansanTitle">举一反三</p>
+<hr style="border-top:0px;border-bottom:1px solid #AAAAB1;">
+{% endif %}
+<!-- 题目加选项 -->
+{% if single_question.question_html != "" %}
+{% autoescape off %}
+<p class="juyifansanTitle">题目&nbsp{{forloop.counter}}</p>
+{% if question.spider_source = 2 %}
+<div class="content" id="juyiTimu{{forloop.counter}}" style="height:4.5rem;overflow:hidden;font-size: 0.85rem;">{{single_question.question_html|replace_br_decode|image_prefix_replace:question.spider_source|replace_math}}</div>
+{% else %}
+<div class="content" id="juyiTimu{{forloop.counter}}" style="height:4.5rem;overflow:hidden;padding-bottom:0px;font-size: 0.85rem;">{{single_question.question_html|replace_br_decode|image_prefix_replace:question.spider_source}}</div>
+{% endif %}
+{% endautoescape %}
+{% endif %}
+
+{% if single_question.option_html != "" %}
+{% autoescape off %}
+{% if question.spider_source = 2 %}
+<div class="content" style="font-size: 0.85rem;">{{single_question.option_html|replace_br_decode|image_prefix_replace:question.spider_source|replace_math}}</div>
+{% else %}
+<div class="content" style="font-size: 0.85rem;">{{single_question.option_html}}</div>
+{% endif %}
+
+{% endautoescape %}
+{% endif %}
+
+<!-- 显示解析 -->
+{% if forloop.last %}
+<div onclick="xianshijiexi('juyifansan{{ forloop.counter }}_content','xianshijiexi_div{{ forloop.counter }}');extendYuanti('juyiTimu{{ forloop.counter }}')" class="search_arrow"  id='xianshijiexi_div{{ forloop.counter }}' style="border-bottom:0px;"><img src="{{base_url}}/static/images/question_search_down_arrow_new.png" alt="展开" /></div>
+{% else %}
+<div onclick="xianshijiexi('juyifansan{{ forloop.counter }}_content','xianshijiexi_div{{ forloop.counter }}');extendYuanti('juyiTimu{{ forloop.counter }}')" class="search_arrow"  id='xianshijiexi_div{{ forloop.counter }}'><img src="{{base_url}}/static/images/question_search_down_arrow_new.png" alt="展开" /></div>
+{% endif %}
+
+<div id="juyifansan{{ forloop.counter }}_content" style="display:none;">
+
+<!-- 答案 -->
+  {% if single_question.answer_all_html != "" %}
+  {% autoescape off %}
+  <p class="juyifansanTitle" style="color:#44b066">
+    答案
+  </p>
+  {% if question.spider_source = 2 %}
+  <div class="content" style="font-size: 0.85rem;">{{single_question.answer_all_html|replace_br_decode|image_prefix_replace:question.spider_source|replace_math}}</div>
+  {% else %}
+  <div class="content" style="font-size: 0.85rem;">{{single_question.answer_all_html|replace_br_decode|image_prefix_replace:question.spider_source}}</div>
+  {% endif %}
+  {% endautoescape %}
+  {% endif %}
+
+<!-- 解答 -->
+  {% if single_question.jieda != "" %}
+  {% autoescape off %}
+  <p class="juyifansanTitle" style="color:#44b066">
+    解答
+  </p>
+{% if question.spider_source = 2 %}
+<div class="content" style="font-size: 0.85rem;">{{single_question.jieda|html_decode|image_prefix_replace:question.spider_source|replace_math}}</div>
+{% else %}
+<div class="content" style="font-size: 0.85rem;">{{single_question.jieda|html_decode|image_prefix_replace:question.spider_source}}</div>
+{% endif %}
+  {% endautoescape %}
+  {% endif %}
+
+<!-- 知识点 -->
+    {% if single_question.knowledge_point != "" %}
+    {% autoescape off %}
+    <p class="juyifansanTitle" style="color:#44b066">
+      知识点
+    </p>
+    {% if question.spider_source = 2 %}
+    <div class="content" style="font-size: 0.85rem;">{{single_question.knowledge_point|html_decode|image_prefix_replace:question.spider_source|replace_math}}</div>
+    {% else %}
+    <div class="content" style="font-size: 0.85rem;">{{single_question.knowledge_point|html_decode|image_prefix_replace:question.spider_source}}</div>
+    {% endif %}
+    {% endautoescape %}
+    {% endif %}
+
+
+    {% if forloop.last %}
+    <div class="search_arrow" onclick="shouhui('juyifansan{{ forloop.counter }}_content','xianshijiexi_div{{ forloop.counter }}');shrinkYuanti('juyiTimu{{ forloop.counter }}')" style="border-bottom:0px;"><img src="{{base_url}}/static/images/question_search_up_arrow_new.png" alt="收回" /></div>
+    {% else %}
+    <div class="search_arrow" onclick="shouhui('juyifansan{{ forloop.counter }}_content','xianshijiexi_div{{ forloop.counter }}');shrinkYuanti('juyiTimu{{ forloop.counter }}')" ><img src="{{base_url}}/static/images/question_search_up_arrow_new.png" alt="收回" /></div>
+    {% endif %}
+</div>
+{% if forloop.last %}
+</div>
+{% endif %}
+{% endfor %}
+<br><br><br>
+</body>
+<script type="text/javascript">
+    MathJax.Hub.Startup.onload();
+</script>
+</html>

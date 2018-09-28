@@ -1,0 +1,10 @@
+.text_center{ text-align: center; }
+
+#grade-tip{ display: inline-block; width: 100px; float: left; }
+#grade-kinds{ display: inline-block; float: right; width: 450px;}
+#grade-kinds label{ margin-right: 3px; }
+#grade-kinds input{ margin-right: 20px;}
+
+.gradeWord{ display: inline-block; width: 45px; }
+.textAlign{ display: inline-block; width: 100px; }
+.myglyphicon{ position: relative; right: 20px; }

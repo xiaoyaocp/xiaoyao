@@ -1,0 +1,195 @@
+@base: #3bb878;
+
+.btn-default(@color) {
+  background-color: @color;
+  border: 1px solid @color;
+}
+
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+/*search_panel*/
+.search_panel {
+
+  margin-bottom: 20px;
+
+  .user_detail_title {
+    float: left;
+    font-size: 1.5em;
+  }
+
+  .user_type_choose {
+    float: right;
+  }
+
+  .search_query {
+    float: right !important;
+    margin-right: 15px;
+  }
+
+}
+
+/*teacher_list*/
+.teacher_verify_list {
+  margin-top: 20px;
+
+  p {
+    margin-left: 60px;
+    padding-top: 10px;
+  }
+
+  .teacher_verify_unit {
+
+    background: #fff;
+    margin-bottom: 50px;
+
+    .avatar_display {
+      margin-top: 20px;
+      margin-left: 20px;
+
+      img {
+        float: left;
+      }
+
+      .necessary_list {
+        margin-left: 90px;
+        padding-top: 20px;
+
+        li {
+          display: inline;
+          margin-right: 50px;
+        }
+
+        li:nth-last-child(1) {
+          margin-left: 165px;
+        }
+      }
+
+      .teacher_status {
+        margin-left: 20px;
+        color: red;
+        border: 2px solid red;
+
+      }
+
+    }
+
+
+    .pic_display {
+      margin-left: 100px;
+
+      img {
+        display: inline;
+        max-height: 50px;
+        width: 15%;
+      }
+
+    }
+
+
+    .teacher_info_list {
+      margin-top: 30px;
+      margin-left: 80px;
+    }
+
+    .id_card_display {
+      margin-top: 20px;
+
+
+      img {
+        margin-left: 50px;
+        display: inline;
+        max-height: 85px;
+        width: 50%;
+      }
+
+
+      label {
+
+        padding: 5px;
+        background: #9d9d9d;
+        color: #fff;
+        .rounded-corners(5px);
+      }
+
+      label:nth-child(3) {
+        margin-left: 50px;
+      }
+
+    }
+
+
+    .teacher_card_display {
+
+      clear: both;
+      padding-top: 30px;
+
+      label {
+        float: left;
+        margin-top: 70px;
+        padding: 5px;
+        background: #9d9d9d;
+        color: #fff;
+        .rounded-corners(5px);
+      }
+
+      .teacher_card_display_two {
+        float: left;
+        width: 60%;
+
+        img {
+          max-height: 85px;
+          width: 83%;
+          margin-left: 50px;
+          margin-top: 20px;
+        }
+
+      }
+
+    }
+
+
+    .pull-left {
+      margin-bottom: 15px;
+      margin-left: 20px;
+      width: 90%;
+
+      .dropdown {
+        display: inline;
+      }
+
+      a {
+        float: right;
+        margin: 0 5px;
+      }
+    }
+
+  }
+
+}
+
+.whiteboard_info_list {
+  clear: both;
+  padding-top: 20px;
+  margin-left: 20px;
+
+  li {
+    margin: 0;
+  }
+}
+
+#whiteboard_note {
+  text-indent: 5px;
+}
+
+.detail_list {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+
+}

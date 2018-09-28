@@ -1,0 +1,33 @@
+.table-td-default {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.search_panel {
+  margin-bottom: 20px;
+}
+.search_panel .wb_record_title {
+  float: left;
+  margin-left: 5px;
+  font-size: 1.5em;
+}
+.search_panel .record_time_filter {
+  float: right;
+}
+.search_panel .pull-right {
+  background: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+.search_panel #start_date,
+.search_panel #end_date {
+  width: 35%;
+}
+.wb_record th {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.form-control {
+  width: auto;
+}

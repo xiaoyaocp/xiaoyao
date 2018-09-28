@@ -1,0 +1,9 @@
+.td_5s { line-height: 80px; width: 7%;}
+/*.text_center{ text-align: center; }*/
+
+
+#trumpet-title{ width: 100%; height: 50px; overflow: hidden; }
+#trumpet-title li{ float: left; width: 100px; height: 50px; line-height: 50px; text-align: center;}
+/*#trumpet-title li:nth-of-type(4),#trumpet-title li:nth-of-type(5),#trumpet-title li:nth-of-type(6),
+#trumpet-title li:nth-of-type(7),#trumpet-title li:nth-of-type(8){ width: 90px; }
+*/

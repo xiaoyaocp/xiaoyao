@@ -1,0 +1,57 @@
+<!--<div class="container">-->
+<!--<h1 class="login_title">阿凡题运营系统</h1>-->
+<!--<section class="loginBox row-fluid">-->
+<!--<section class="span12">-->
+<!--<form action="/do_login/" method="post">-->
+<!--{% csrf_token %}-->
+<!--<p><input type="text" name="username" placeholder="用户名" id="username"/></p>-->
+<!--<p><input type="password" name="password" placeholder="密码" id="password"/></p>-->
+<!--<p> &nbsp;-->
+<!--<span class="alarm">-->
+<!--{% if error_msg %}-->
+<!--{{ error_msg }}-->
+<!--{% endif %}-->
+<!--</span>-->
+<!--&nbsp;-->
+<!--</p>-->
+<!--<p id="reset-pwd"><a href="https://family.afanti100.com/admin/password_reset/">忘记密码</a></p>-->
+<!--<section class="row-fluid">-->
+<!--<section class="span12">-->
+<!--<input type="submit" value="登 录" class="btn btn-logbtn" id="login_submit">-->
+<!--</section>-->
+<!--</section>-->
+<!--</form>-->
+<!--</section>-->
+<!--</section>-->
+<!--</div>-->
+<div class="wrap">
+    <div class="container">
+        <h1>NEO</h1>
+        <form action="/do_login/" method="post">
+            {% csrf_token %}
+            <input type="text" name="username" id="username" placeholder="user"/>
+            <input type="password" name="password" id="password" placeholder="password"/>
+            <p>
+                <span class="alarm">
+                    {% if error_msg %}
+                        {{ error_msg }}
+                    {% endif %}
+                </span>
+            </p>
+            <!--<p id="reset-pwd"><a href="https://family.afanti100.com/admin/password_reset/">忘记密码</a></p>-->
+            <input type="submit" value="login"/>
+        </form>
+    </div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>

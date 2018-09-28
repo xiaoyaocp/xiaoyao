@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-from django.http import HttpResponse
+
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("xiaoyao is born today!!!")
+    return render(request, 'login.html')

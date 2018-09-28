@@ -1,0 +1,13 @@
+#dowload-card span{ color: #7b0656; }
+#dowload-card{ margin-left: 20px; }
+
+#trumpet-title{ overflow: hidden;}
+#trumpet-title li{ float: left; width: 180px; height: 80px; line-height: 80px; text-align: center;}
+
+.card-list{ overflow: hidden;}
+.card-list li{ float: left; width: 180px; height: 80px; line-height: 80px; text-align: center; overflow: hidden;}
+
+.myglyphicon{ position: relative; right: 20px; }
+
+.text-width{ display: inline-block; width: 120px; }
+#recommend_course_ids{ width: 300px;}

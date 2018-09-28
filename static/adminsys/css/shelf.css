@@ -1,0 +1,507 @@
+.table {
+  color: #666
+}
+
+#main-content {
+  width: 980px;
+  margin: 30px auto
+}
+
+#main-content>.content {
+  min-height: 600px;
+  padding: 20px 20px 40px;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  margin-top: -1px
+}
+
+#main-content>.content.first-tab {
+  border-radius: 0 10px 10px
+}
+
+#main-content>.content::after {
+  display: table;
+  clear: both;
+  content: ''
+}
+
+#main-content .page-header {
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  background-repeat: repeat-x;
+  background-position: 0 28px
+}
+
+#main-content .page-header h3 {
+  float: left;
+  font-size: 14px;
+  line-height: 16px
+}
+
+#main-content .page-header .handler {
+  float: right
+}
+
+#main-content .page-header .handler .backup * {
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s
+}
+
+#main-content .page-header .handler .backup i {
+  font-size: 16px;
+  margin-right: 10px
+}
+
+#main-content .page-header .handler .backup span {
+  color: #444!important
+}
+
+#main-content .page-header .handler .backup:hover * {
+  color: #177c77!important
+}
+
+#main-content .page-header::after {
+  display: table;
+  clear: both;
+  content: ''
+}
+
+#main-content .page-tip {
+  margin-bottom: 20px
+}
+
+#main-content .select_activity_cont .add_activities_cont .table_head {
+  padding-bottom: 10px;
+  margin-top: -4px
+}
+
+#main-content .select_activity_cont .add_activities_cont .table_head div {
+  line-height: 22px;
+  height: 22px
+}
+
+
+.pagination>ul {
+  float: right
+}
+
+.pagination>ul>a, .pagination>ul>span {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  padding: 0 9px;
+  height: 28px;
+  text-align: center;
+  line-height: 27px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  -webkit-transition: background-color .3s, color .3s, border-color .3s;
+  -moz-transition: background-color .3s, color .3s, border-color .3s;
+  -o-transition: background-color .3s, color .3s, border-color .3s;
+  transition: background-color .3s, color .3s, border-color .3s;
+  cursor: pointer;
+  color: #444
+}
+
+.pagination>ul>a:last-child, .pagination>ul>span:last-child {
+  margin-right: 0
+}
+
+.pagination>ul>a:hover, .pagination>ul>span:hover {
+  color: #fff!important;
+  border-color: #1b938e;
+  background-color: #29b6b0
+}
+
+.pagination>ul>a .nextLink, .pagination>ul>a.prevLink, .pagination>ul>span .nextLink, .pagination>ul>span.prevLink {
+  width: 28px
+}
+
+.pagination>ul>a.gap, .pagination>ul>span.gap {
+  cursor: not-allowed
+}
+
+.pagination>ul>a.gap:hover, .pagination>ul>span.gap:hover {
+  color: #444!important;
+  border-color: #ebebeb;
+  background-color: #fff
+}
+
+.pagination>ul>span.currentStep {
+  color: #fff!important;
+  border-color: #1b938e;
+  background-color: #29b6b0
+}
+
+.pagination::after, .pagination>ul::after {
+  display: table;
+  clear: both;
+  content: ''
+}
+
+.pagination>.fl span {
+  line-height: 27px
+}
+
+.page-header .handler>* {
+  float: left
+}
+
+.page-header .handler>div {
+  cursor: pointer
+}
+
+.page-header .handler i.dbIcon-ellipsis {
+  margin: 0 12px
+}
+
+.page-header .handler .category>* {
+  float: left
+}
+
+.page-header .handler .category i {
+  display: block;
+  background-position: -272px -103px
+}
+
+.page-header .handler .category span {
+  margin-top: 2px;
+  transition: color .3s;
+  color: #444
+}
+
+.page-header .handler .category span:hover {
+  color: #29b6b0
+}
+
+.page-header .handler .category::after {
+  display: table;
+  clear: both;
+  content: ' '
+}
+
+.page-header .handler .add-items {
+  position: relative;
+  transition: color .3s
+}
+
+.page-header .handler .add-items>ul {
+  position: absolute;
+  z-index: 100;
+  top: 24px;
+  right: -20px;
+  display: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, .1)
+}
+
+.page-header .handler .add-items>ul::before {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  content: '';
+  border: 5px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, .1)
+}
+
+.page-header .handler .add-items>ul::after {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  margin-left: -5px;
+  content: '';
+  border: 5px solid transparent;
+  border-bottom-color: #fff
+}
+
+.page-header .handler .add-items>ul a {
+  display: block;
+  width: 134px;
+  padding: 10px;
+  white-space: nowrap;
+  color: #444
+}
+
+.page-header .handler .add-items>ul a:hover {
+  color: #29b6b0!important
+}
+
+.page-header .handler .add-items:hover {
+  color: #29b6b0
+}
+
+.page-header .handler::after {
+  display: table;
+  clear: both;
+  content: ' '
+}
+
+.fl {
+  float: left
+}
+
+.fr {
+  float: right
+}
+
+.add_activities_cont .table_head div {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 47px;
+  float: left;
+  height: 47px;
+  color: #666
+}
+
+.add_activities_cont .table_head .th_first {
+  width: 16px
+}
+
+.add_activities_cont .table_head .th_title {
+  width: 400px
+}
+
+.add_activities_cont .table_head .th_state {
+  width: 100px
+}
+
+.add_activities_cont .table_head .th_goods_price {
+  width: 180px
+}
+
+.add_activities_cont .table_head .th_on_sale_time {
+  width: 100px
+}
+
+.add_activities_cont .table_head .th_activities_order {
+  width: 77px
+}
+
+.add_activities_cont .table_head .th_user_entrance {
+  width: 134px
+}
+
+.add_activities_cont .table_head .th_operation {
+  width: 100px
+}
+
+.add_activities_cont .table_tbody_cont {
+  margin-bottom: 20px;
+  border: 1px solid #ebebeb
+}
+
+.add_activities_cont .table_tbody_cont:hover {
+  border-top: 1px solid #d2f0f0;
+  border-right: 1px solid #d2f0f0;
+  border-bottom: 1px solid #d2f0f0;
+  border-left: 3px solid #29b6b0;
+  background: #f6fdfd
+}
+
+.add_activities_cont .table_tbody_cont:hover .td_first {
+  width: 13px
+}
+
+.add_activities_cont .table_tbody_cont>div {
+  float: left;
+  height: 100px;
+  padding: 8px 0
+}
+
+.add_activities_cont .table_tbody_cont a.text_underline {
+  text-decoration: underline
+}
+
+.add_activities_cont .table_tbody_cont .td_first {
+  width: 15px
+}
+
+.add_activities_cont .table_tbody_cont .td_title {
+  position: relative;
+  width: 400px
+}
+
+.add_activities_cont .table_tbody_cont .td_title img {
+  display: inline-block;
+  float: left;
+  margin-right: 16px
+}
+
+.add_activities_cont .table_tbody_cont .td_title .td_title_img_info {
+  line-height: 24px;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  width: 220px;
+  margin-top: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+.add_activities_cont .table_tbody_cont .td_title .td_title_img_info p {
+  font-size: 13px;
+  font-weight: 700;
+  color: #444
+}
+
+.add_activities_cont .table_tbody_cont .td_title .td_title_img_info div i {
+  font-style: normal
+}
+
+.add_activities_cont .table_tbody_cont .td_title .td_title_img_info div .free {
+  font-size: 12px;
+  margin-left: 4px;
+  padding: 0 2px;
+  color: #11a228;
+  border: 1px solid #11a228;
+  border-radius: 10px
+}
+
+.add_activities_cont .table_tbody_cont .td_title .td_title_img_info div .limit {
+  font-size: 12px;
+  margin-left: 4px;
+  padding: 0 2px;
+  color: #4f53ff;
+  border: 1px solid #4f53ff;
+  border-radius: 10px
+}
+
+.add_activities_cont .table_tbody_cont .td_state {
+  line-height: 80px;
+  width: 100px
+}
+
+.add_activities_cont .table_tbody_cont .td_state span {
+  line-height: 80px
+}
+
+.add_activities_cont .table_tbody_cont .td_goods_price {
+  line-height: 30px;
+  padding: 30px 20px 0 0;
+  width: 180px
+}
+
+.add_activities_cont .table_tbody_cont .td_on_sale_time {
+  position: relative;
+  width: 100px;
+  padding-top: 42px
+}
+
+.add_activities_cont .table_tbody_cont .td_operation {
+  width: 100px;
+  padding-top: 42px
+}
+
+.td_operation a {
+  float: left;
+  margin-right: 13px
+}
+
+.but_off_sell {
+  width: 16px;
+  height: 16px;
+  background: url(http://yun.duiba.com.cn/developer/img/new_icon.png) -0px -36px no-repeat
+}
+
+.but_off_sell:hover {
+  background-position: -36px -36px
+}
+
+/*.but_on_sell {
+  width: 16px;
+  height: 16px;
+  background: url(http://yun.duiba.com.cn/developer/img/new_icon.png) -72px -36px no-repeat
+}
+
+.but_on_sell:hover {
+  background-position: -108px -36px
+}*/
+
+.but_modify {
+  width: 16px;
+  height: 16px;
+  background: url(http://yun.duiba.com.cn/developer/img/new_icon.png) -144px -72px no-repeat
+}
+
+.but_modify:hover {
+  background-position: -36px -72px
+}
+
+.but_top {
+  width: 16px;
+  height: 16px;
+  background: url(http://yun.duiba.com.cn/developer/img/new_icon.png) -144px -214px no-repeat;
+  display: none;
+}
+
+.but_top:hover {
+  background-position: -144px -252px
+}
+
+.form-horizontal {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  border-bottom: dashed #e9e9e9 1px
+}
+
+#title {
+  width: 312px;
+  height: 34px
+}
+
+#status {
+  width: 116px
+}
+
+.clearfix {
+  display: table;
+  clear: both;
+  content: ' '
+}
+
+.ui-sortable-placeholder {
+  border: 3px dashed #aaa;
+  height: 100px;
+  width: 923px;
+  background: rgba(41, 182, 176, 0.2);
+  margin-bottom: 20px:
+}
+
+.goods_info {
+  color: #aaa;
+}
+
+.textarea_div * {
+  vertical-align: middle;
+}
+
+#btn1,#btn2,#btn3 {
+  width: 52px;
+  height: 52px;
+  border: 1px #000 dashed!important;
+  padding-top: 3px;
+  background: url(/static/adminsys/img/plus.png) no-repeat;
+  background-size: 50px 50px;
+  border: 0;
+  vertical-align: middle;
+  margin-left: 50px
+}
+
+#bg_show,#md_show,#sm_show {
+  border: 0;
+  margin-left: 50px;
+}
+
+.blank_input {
+  border-top: 0!important;
+  border-left: 0!important;
+  border-right: 0!important;
+  border-bottom: 1px solid ##6e6e6e;
+}

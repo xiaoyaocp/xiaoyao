@@ -1,0 +1,28 @@
+.search_panel {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.search_panel .user_detail_title {
+  float: left;
+  margin-left: 5px;
+  font-size: 1.5em;
+}
+.search_panel .options {
+  float: right;
+}
+.create_push {
+  margin-top: 40px;
+  margin-left: -15px;
+}
+.create_push .time_choose {
+  margin-top: 30px;
+}
+.create_push .submitBtn {
+  width: 200px;
+}
+.create_push .options {
+  float: right;
+}
+.create_push .panel-body {
+  margin-bottom: 30px;
+}

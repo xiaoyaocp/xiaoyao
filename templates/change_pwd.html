@@ -1,0 +1,33 @@
+{% extends "include/_new_base.html" %}
+
+{% block title %}
+修改密码
+{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="/static/adminsys/css/_table_base.css"/>
+<script src="/static/adminsys/js/source_js/jquery-form.js"></script>
+<script src="/static/adminsys/js/change_pwd.js"></script>
+
+{% endblock head %}
+
+
+{% block header %}
+
+{% include "include/_header.html" %}
+
+{% endblock header %}
+
+
+{% block content %}
+
+{% include "change_pwd_content.html" %}
+
+{% endblock content %}
+
+
+{% block footer %}
+
+{% include "include/_footer.html" %}
+
+{% endblock footer %}

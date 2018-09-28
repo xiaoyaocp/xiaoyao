@@ -1,0 +1,17 @@
+{% extends "_login_base.html" %}
+
+{% block title %}
+登录界面
+{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="/static/adminsys/css/login.css" />
+<script src="/static/adminsys/js/login_adapt.js"></script>
+<script src="/static/adminsys/js/login_validate.js"></script>
+{% endblock head %}
+
+{% block content %}
+
+{% include "login_page.html" %}
+
+{% endblock content %}

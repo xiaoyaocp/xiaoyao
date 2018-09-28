@@ -1,0 +1,57 @@
+.table-td-default {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.search_panel {
+  margin-bottom: 20px;
+}
+.search_panel .user_detail_title {
+  float: left;
+  margin-left: 5px;
+  font-size: 1.5em;
+}
+.search_panel .datefilter {
+  float: right;
+  margin-right: 25px;
+}
+.search_panel .search_query {
+  float: right !important;
+  margin-right: 25px;
+}
+.search_panel #deliver_all {
+  float: right;
+  margin-right: 25px;
+}
+.search_panel #download {
+  float: right;
+  margin-right: 25px;
+}
+.exchange_list_table tr td {
+  text-align: center;
+  line-height: 2em !important;
+}
+.exchange_list_table tr th {
+  text-align: center !important;
+}
+.exchange_list_table th {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.exchange_list_table .exchange_list {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+.exchange_list_table .undo {
+  color: red;
+  font-weight: 600;
+}
+.exchange_list_table .operation_panel .form-control {
+  width: 60%;
+  margin: 5px 20%;
+}
+.exchange_list_table .passBtn,
+.exchange_list_table .rejectBtn,
+.exchange_list_table .deliverBtn,
+.exchange_list_table .revokeBtn {
+  margin: 0 10px;
+}

@@ -1,0 +1,65 @@
+
+.verify_unit {
+  margin-top: 30px;
+}
+
+.active {
+  border-bottom: none;
+}
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 10%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.label {
+  color: #fff;
+  background: #ddd;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.basic_info_display {
+  float: left;
+}
+
+.onetoone_info_display {
+  float: left;
+  width: 50%;
+}
+
+.pic_display {
+  float: left;
+  margin-left: 50px;
+  display: inline-block;
+}
+
+/*.pic_display img {*/
+        /*max-height: 50px;*/
+        /*width: 5%;*/
+/*}*/
+
+
+.success_panel {
+  clear: both;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.success_panel a {
+  width: 30%;
+}
+
+
+.reject_panel {
+  float: right;
+}

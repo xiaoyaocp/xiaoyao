@@ -1,0 +1,100 @@
+@base: #3bb878;
+
+.btn-default(@color) {
+  background-color: @color;
+  border: 1px solid @color;
+}
+
+.table-td-default {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+.border_bottom_only(@color) {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px @color solid;
+}
+
+.transition (@prop: all, @time: 0.2s, @ease: linear) {
+  -webkit-transition: @prop @time @ease;
+  -moz-transition: @prop @time @ease;
+  -o-transition: @prop @time @ease;
+  -ms-transition: @prop @time @ease;
+  transition: @prop @time @ease;
+
+}
+
+.search_panel {
+
+  margin-bottom: 20px;
+
+  .user_detail_title {
+    float: left;
+    margin-left: 5px;
+    font-size: 1.5em;
+  }
+
+  .datefilter {
+    float: right;
+    margin-right: 25px;
+  }
+
+  .search_query {
+    float: right !important;
+    margin-right: 25px;
+  }
+
+  #deliver_all {
+    float: right;
+    margin-right: 25px;
+  }
+
+  #download {
+    float: right;
+    margin-right: 25px;
+  }
+
+}
+
+.exchange_list_table {
+
+  tr td {
+    text-align: center;
+    line-height: 2em !important;
+  }
+
+  tr th {
+    text-align: center !important;
+  }
+
+  th {
+    .table-td-default;
+  }
+
+  .exchange_list {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+
+  .undo {
+    color: red;
+    font-weight: 600;
+  }
+
+  .operation_panel {
+
+    .form-control {
+      width: 60%;
+      margin: 5px 20%;
+    }
+
+  }
+
+  .passBtn, .rejectBtn, .deliverBtn, .revokeBtn {
+    margin: 0 10px;
+  }
+
+
+}

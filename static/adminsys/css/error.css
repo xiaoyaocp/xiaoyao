@@ -1,0 +1,18 @@
+/*img {
+  float: left;
+  margin-left: 100px;
+  margin-top: 150px;
+}*/
+.container #main-content>.content h1 {
+  /*float: left;*/
+  /*margin-left: 150px;*/
+  width: 400px;
+  margin: 300px auto;
+  /*margin-top: 300px;*/
+  font-size: 50px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+  color: #fff;
+}
+.container #main-content>.content {
+	background-color: #302E2E;
+}

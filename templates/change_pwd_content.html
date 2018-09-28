@@ -1,0 +1,32 @@
+<section id="main-content" class="custom_class_cont">
+
+  <div class="content">
+    <div class="page-header">
+      <h2>修改密码</h2><span class="glyphicon glyphicon-edit" style="font-size: 30px;display:inline-block;margin: 20px 0 0 10px;"></span>
+    </div>
+
+    <form action="/" id="android_form" enctype="multipart/form-data" method="post">
+      {% csrf_token %}
+      <div class="form-horizontal" style="border-bottom: none;">
+        <div class="form-group">
+          <label for="new_pwd">新密码：</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="password" name="new_pwd" id="new_pwd" class="form-control">
+          <span style="font-size: 12px;color: red; display: none;" class="new_error_info">密码的位数不得少于6位</span>
+          <span class="glyphicon glyphicon-ok new_right_info" style="color: green;display: none"></span>
+        </div>
+      </div>
+      <div class="form-horizontal">
+        <div class="form-group">
+          <label for="sure_new_pwd">确认新密码：</label>
+          <input type="password" name="sure_new_pwd" id="sure_new_pwd" class="form-control">
+          <span style="font-size: 12px;color: red;display: none;" class="sure_error_info">两次密码输入不同</span>
+          <span class="glyphicon glyphicon-ok sure_right_info" style="color: green;display: none;"></span>
+        </div>
+      </div>
+      <div class="form-group pull-right">
+        <button class="btn btn-success" type="submit" id="sure_btn">确定</button>
+        <button class="btn btn-danger" type="reset" id="reset_btn">重置</button>
+      </div>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+.td_5s { line-height: 80px; width: 7%;}
+.text_center{ text-align: center; }
+
+
+#trumpet-title{ width: 100%; height: 50px; overflow: hidden; }
+/*<<<<<<< HEAD*/
+/*#trumpet-title li{ float: left; width: 150px; height: 50px; line-height: 50px; text-align: center;}*/
+/*#trumpet-title li:nth-of-type(4),#trumpet-title li:nth-of-type(5),#trumpet-title li:nth-of-type(6),*/
+/*#trumpet-title li:nth-of-type(7),#trumpet-title li:nth-of-type(8),#trumpet-title li:nth-of-type(9){ width: 80px; }*/
+/*=======*/
+#trumpet-title li{ float: left; width: 130px; height: 50px; line-height: 50px; text-align: center;}
+#trumpet-title li:nth-of-type(4),#trumpet-title li:nth-of-type(5),#trumpet-title li:nth-of-type(6){ width: 100px; }
+#trumpet-title li:nth-of-type(8){ width: 80px; }
+/*>>>>>>> 457aa90388c257677c6df9b45b5b62f77f2d6455*/

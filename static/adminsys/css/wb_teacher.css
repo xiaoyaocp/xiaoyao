@@ -1,0 +1,138 @@
+/*search_panel*/
+.search_panel {
+  margin-bottom: 20px;
+}
+.search_panel .user_detail_title {
+  float: left;
+  font-size: 1.5em;
+}
+.search_panel .user_type_choose {
+  float: right;
+}
+.search_panel .search_query {
+  float: right !important;
+  margin-right: 15px;
+}
+/*teacher_list*/
+.teacher_verify_list {
+  margin-top: 20px;
+}
+.teacher_verify_list p {
+  margin-left: 60px;
+  padding-top: 10px;
+}
+.teacher_verify_list .teacher_verify_unit {
+  background: #fff;
+  margin-bottom: 50px;
+}
+.teacher_verify_list .teacher_verify_unit .avatar_display {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.teacher_verify_list .teacher_verify_unit .avatar_display img {
+  float: left;
+}
+.teacher_verify_list .teacher_verify_unit .avatar_display .necessary_list {
+  margin-left: 90px;
+  padding-top: 20px;
+}
+.teacher_verify_list .teacher_verify_unit .avatar_display .necessary_list li {
+  display: inline;
+  margin-right: 50px;
+}
+.teacher_verify_list .teacher_verify_unit .avatar_display .necessary_list li:nth-last-child(1) {
+  margin-left: 165px;
+}
+.teacher_verify_list .teacher_verify_unit .avatar_display .teacher_status {
+  margin-left: 20px;
+  color: red;
+  border: 2px solid red;
+}
+.teacher_verify_list .teacher_verify_unit .pic_display {
+  margin-left: 100px;
+}
+.teacher_verify_list .teacher_verify_unit .pic_display img {
+  display: inline;
+  max-height: 50px;
+  width: 15%;
+}
+.teacher_verify_list .teacher_verify_unit .teacher_info_list {
+  margin-top: 30px;
+  margin-left: 80px;
+}
+.teacher_verify_list .teacher_verify_unit .id_card_display {
+  margin-top: 20px;
+}
+.teacher_verify_list .teacher_verify_unit .id_card_display img {
+  margin-left: 50px;
+  display: inline;
+  max-height: 85px;
+  width: 50%;
+}
+.teacher_verify_list .teacher_verify_unit .id_card_display label {
+  padding: 5px;
+  background: #9d9d9d;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.teacher_verify_list .teacher_verify_unit .id_card_display label:nth-child(3) {
+  margin-left: 50px;
+}
+.teacher_verify_list .teacher_verify_unit .teacher_card_display {
+  clear: both;
+  padding-top: 30px;
+}
+.teacher_verify_list .teacher_verify_unit .teacher_card_display label {
+  float: left;
+  margin-top: 70px;
+  padding: 5px;
+  background: #9d9d9d;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.teacher_verify_list .teacher_verify_unit .teacher_card_display .teacher_card_display_two {
+  float: left;
+  width: 60%;
+}
+.teacher_verify_list .teacher_verify_unit .teacher_card_display .teacher_card_display_two img {
+  max-height: 85px;
+  width: 83%;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.teacher_verify_list .teacher_verify_unit .pull-left {
+  margin-bottom: 15px;
+  margin-left: 20px;
+  width: 90%;
+}
+.teacher_verify_list .teacher_verify_unit .pull-left .dropdown {
+  display: inline;
+}
+.teacher_verify_list .teacher_verify_unit .pull-left a {
+  float: right;
+  margin: 0 5px;
+}
+.whiteboard_info_list {
+  clear: both;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+.whiteboard_info_list li {
+  margin: 0;
+}
+#whiteboard_note {
+  text-indent: 5px;
+}
+.detail_list {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}

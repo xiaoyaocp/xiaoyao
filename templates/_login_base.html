@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="/static/adminsys/css/source_css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/static/adminsys/css/source_css/sweetalert.css">
+<script src="/static/adminsys/js/source_js/jquery-1.11.3.min.js"></script>
+<script src="/static/adminsys/js/source_js/bootstrap.min.js"></script>
+<script src="/static/adminsys/js/source_js/sweetalert.min.js"></script>
+
+{% block head %} {% endblock head %}
+
+<title>
+{% block title %} {% endblock %}
+</title>
+
+</head>
+
+<body>
+
+<div class="header col-md-12">
+  {% block header %}
+
+  {% endblock header %}
+
+</div>
+
+
+<div class="content col-md-12">
+  {% block content %}
+
+  {% endblock content %}
+</div>
+
+<div class="footer col-md-12">
+  {% block footer %}
+
+  {% endblock footer %}
+</div>
+
+</body>
+</html>
