@@ -55,7 +55,7 @@ MIDDLEWARE_CLASSES = [
 ROOT_URLCONF = 'xiaoyao.urls'
 
 
-STATIC_ROOT = '/root/workspace/nginx_static_file/'
+
 TEMPLATE_DIRS = (
     # 只添加一个模板根目录，其他子项目使用相对路径访问
     os.path.join(BASE_DIR, 'templates'),
@@ -126,6 +126,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/root/workspace/nginx_static_file/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
