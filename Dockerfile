@@ -1,11 +1,12 @@
 FROM python:2.7
 MAINTAINER Alex
-
+ENV DEPLOY_DIR /xiaoyao
 RUN apt-get update
 RUN apt-get install -y -q python-pip
 RUN pip install setuptools
 RUN pip install Django==1.9.9
-ADD ../xiaoyao /opt/
+WORKDIR /opt/xiaoyao
+ADD ${DEPLOY_DIR} /opt/
 
 WORKDIR /opt/xiaoyao
 RUN python setup.py install
