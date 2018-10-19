@@ -4,10 +4,8 @@ MAINTAINER Alex
 RUN apt-get update
 RUN apt-get install -y -q python-pip
 RUN pip install setuptools
+RUN pip install -r requirement.txt
 ADD xiaoyao /opt/
-
-WORKDIR /opt/xiaoyao
-RUN python setup.py install
 
 WORKDIR /opt/xiaoyao
 RUN chmod 777 run.sh
