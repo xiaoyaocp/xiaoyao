@@ -2,7 +2,7 @@ FROM python:2.7
 MAINTAINER Alex
 ENV DEPLOY_DIR /xiaoyao
 
-COPY ../ ${DEPLOY_DIR}
+COPY ./* ${DEPLOY_DIR}
 
 WORKDIR ${DEPLOY_DIR}
 RUN apt-get update
