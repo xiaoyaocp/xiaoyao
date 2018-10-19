@@ -22,7 +22,7 @@ COPY ./* ${DEPLOY_DIR}
 WORKDIR ${DEPLOY_DIR}
 RUN apt-get update
 RUN apt-get install -y -q python-pip
-RUN pip install Django==1.9.9
+RUN pip install -r requirement.txt
 RUN ls ${DEPLOY_DIR}
 RUN chmod 777 run.sh
 EXPOSE 8080
