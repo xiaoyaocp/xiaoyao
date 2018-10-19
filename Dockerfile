@@ -15,8 +15,7 @@ RUN echo "deb http://mirrors.aliyun.com/debian jessie main non-free contrib" > /
     && echo "mirrors = http://mirrors.aliyun.com/pypi/simple/" >> ~/.pip/pip.conf \
     && echo "trusted-host = mirrors.aliyun.com" >>  ~/.pip/pip.conf
 
-
-COPY /root/xiaoyao/xiaoyao /xiaoyao
+COPY . /xiaoyao
 
 WORKDIR /xiaoyao
 RUN apt-get update
