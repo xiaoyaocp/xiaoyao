@@ -1,6 +1,5 @@
 FROM python:2.7
 MAINTAINER Alex
-ENV DEPLOY_DIR /xiaoyao/
 
 # 用aliyun的源替换原有的源
 RUN echo "deb http://mirrors.aliyun.com/debian jessie main non-free contrib" > /etc/apt/sources.list \
@@ -17,13 +16,13 @@ RUN echo "deb http://mirrors.aliyun.com/debian jessie main non-free contrib" > /
     && echo "trusted-host = mirrors.aliyun.com" >>  ~/.pip/pip.conf
 
 
-COPY ./* ${DEPLOY_DIR}
+COPY /root/xiaoyao/xiaoyao /xiaoyao
 
-WORKDIR ${DEPLOY_DIR}
+WORKDIR /xiaoyao
 RUN apt-get update
 RUN apt-get install -y -q python-pip
+RUN ls /xiaoyao
 RUN pip install -r requirement.txt
-RUN ls ${DEPLOY_DIR}
 RUN chmod 777 run.sh
 EXPOSE 8080
 CMD ["/bin/sh","run.sh"]
