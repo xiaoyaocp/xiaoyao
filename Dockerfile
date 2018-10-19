@@ -4,6 +4,7 @@ MAINTAINER Alex
 RUN apt-get update
 RUN apt-get install -y -q python-pip
 RUN pip install setuptools
+RUN pip install Django==1.9.9
 ADD ../xiaoyao /opt/
 
 WORKDIR /opt/xiaoyao
