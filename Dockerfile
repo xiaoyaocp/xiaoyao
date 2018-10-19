@@ -1,13 +1,15 @@
 FROM python:2.7
 MAINTAINER Alex
+ENV DEPLOY_DIR /blended_learning
 
 RUN apt-get update
 RUN apt-get install -y -q python-pip
-RUN pip install setuptools
-RUN pip install -r xiaoyao/requirement.txt
-ADD xiaoyao /opt/
 
-WORKDIR /opt/xiaoyao
+COPY . ${DEPLOY_DIR}
+
+RUN pip install -r ${DEPLOY_DIR}/requirements.txt
+
+WORKDIR ${DEPLOY_DIR}
 RUN chmod 777 run.sh
 EXPOSE 8080
 CMD ["/bin/sh","run.sh"]
