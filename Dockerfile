@@ -15,14 +15,14 @@ RUN echo "deb http://mirrors.aliyun.com/debian jessie main non-free contrib" > /
     && echo "use-mirrors = true" >> ~/.pip/pip.conf \
     && echo "mirrors = http://mirrors.aliyun.com/pypi/simple/" >> ~/.pip/pip.conf \
     && echo "trusted-host = mirrors.aliyun.com" >>  ~/.pip/pip.conf
-    
+
 
 COPY ./* ${DEPLOY_DIR}
 
 WORKDIR ${DEPLOY_DIR}
 RUN apt-get update
 RUN apt-get install -y -q python-pip
-RUN pip install -r requirements.txt
+RUN pip install -r ${DEPLOY_DIR}/requirements.txt
 
 RUN chmod 777 run.sh
 EXPOSE 8080
