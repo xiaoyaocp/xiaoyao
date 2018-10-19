@@ -1,6 +1,6 @@
 FROM python:2.7
 MAINTAINER Alex
-ENV DEPLOY_DIR /xiaoyao
+ENV DEPLOY_DIR /xiaoyao/
 
 COPY ./* ${DEPLOY_DIR}
 
